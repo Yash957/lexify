@@ -1,0 +1,89 @@
+header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 65px;
+  float:left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header > h1 {
+  font-size: 35px;
+  line-height: 1.4;
+  width: 240px;
+  padding-left: 40px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/*CSS for the navigation menu */
+header > nav {
+  font-size: 20px;
+  /*width: 50%;*/
+  float: right;
+  padding: 25px 0px 0px 0px;
+  margin-top: -75px;
+}
+
+header > nav > ul {
+  list-style: none;
+}
+
+header > nav > ul > li {
+  display: inline-block;
+  padding: 20px;
+}
+
+/*Need to do this because Bootstrap somehow messes up the link formatting */
+header a,
+header a:link,
+header a:visited,
+header a:hover,
+header a:active
+ {
+  text-decoration: none;
+  color: white;
+}
+
+/*CSS for the logo */
+header > .fa-file-text {
+  float: left;
+  margin-top: 13px;
+  margin-left: 30px;
+  color: white;
+}
+
+header > .fa-pencil {
+  float: left;
+  margin-top: 34px;
+  margin-left: -18px;
+  color: black;
+  background-color: white;
+}
+
+body {
+  background-image:url("../images/cover_img_bw.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+
+/*Add some responsiveness */
+@media (max-width:850px) {
+    header > nav > ul > li {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width:750px) {
+  header > nav > ul > li {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width:700px) {
+  header > nav > ul > li {
+    display: none;
+  }
+}

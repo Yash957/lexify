@@ -1,0 +1,222 @@
+
+/*CSS for the document type heading */
+div#heading {
+  float: left;
+  width: 200px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 200px;
+}
+
+div#heading > h2 {
+  font-size: 25px;
+  line-height: 1.4;
+  height: 50px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/*CSS for the data-entry form */
+form.docdata {
+  float: left;
+  margin-top: 150px;
+	width: 250px;
+  background: #fff;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+form.docdata:hover {
+  opacity:0.85;
+}
+
+form.docdata > legend {
+  padding: 15px 15px 0px 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: lighter;
+  border: 1px solid white;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form.docdata > input {
+  position: relative;
+  margin: 15px auto;
+  padding: 5px 5px 5px 10px;
+  display: block;
+  border: 0.5px solid gray;
+  border-radius: 2px;
+  transition: 0.2s ease-out;
+  font-size: 14px;
+  font-family: 'Droid Serif', serif;
+}
+
+form.docdata > button {
+  color: black;
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  /*background-color: transparent;*/
+  clear: both;
+}
+
+/*CSS for the live document */
+div#document {
+  font-family: 'Droid Serif', serif;
+  height: 520px;
+  width: 400px;
+  border: 3px solid black;
+  float: left;
+  margin: 20px;
+  margin-right: 100px;
+  margin-left: 40px;
+  text-align: center;
+  background-color: white;
+}
+
+div#document div#doctitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+div#document div#underline {
+  border-top: 2px solid black;
+  width: 200px;
+  margin-left: 100px;
+  height: 30px;
+}
+
+div#document div#docmatter {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 2em;
+  width: 400px;
+}
+
+div#document div#signoff {
+  text-align: center;
+  width: 200px;
+  margin-left: 220px;
+  margin-top: 55px;
+  font-size: 16px;
+}
+
+div#document div#awardee {
+  height: 20px;
+  transition: 1s;
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+}
+
+div#document div#subject {
+  height: 30px;
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+}
+
+
+@media (max-width:1100px) {
+  div#document {
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+  div#heading {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width:1000px) {
+  div#document {
+    margin-right: 20px;
+  }
+  div#heading {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width:920px) {
+  div#heading {
+    margin-left: -20px;
+  }
+}
+
+@media (max-width:890px) {
+  div#heading {
+    display: none;
+  }
+  div#document {
+    margin-left: 30px;
+  }
+}
+
+/*Print media query to handle the print request */
+@media print {
+
+  @page {
+    size:auto;
+    margin:5mm;
+  }
+
+/*remove all of the unnecessary stuff */
+  title, header, form, div#heading {
+    display: none;
+    }
+
+/* adjust the document to the print dimensions
+This could be done using the display/print ratio.
+But don't think CSS suppports math. So manually for now */
+  div#document {
+    height: 920px;
+    width: 700px;
+    margin-left: 35px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  div#document div#doctitle {
+    font-size: 48px;
+    margin-bottom: 24px;
+    margin-top: 50px;
+  }
+
+  div#document div#underline {
+    width: 350px;
+    margin-left: 170px;
+    height: 55px;
+  }
+
+  div#document div#docmatter {
+    font-size: 36px;
+    width: 600px;
+    margin: 50px;
+    margin-bottom: 16px;
+  }
+
+  div#document div#signoff {
+    margin-top: 110px;
+    font-size: 28px;
+    text-align: center;
+    width: 350px;
+    margin-left:370px;
+  }
+
+  div#document div#awardee {
+    height: 30px;
+    font-size: 54px;
+  }
+
+  div#document div#subject {
+    height: 50px;
+    font-size: 54px;
+  }
+}

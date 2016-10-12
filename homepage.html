@@ -1,0 +1,86 @@
+<doctype HTML>
+  <html>
+  <head>
+    <title>
+      Lexify
+    </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <style>
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <i class="fa fa-file-text" style="font-size:40px"></i>
+      <i class="fa fa-pencil" style="font-size:17px"></i>
+      <h1> <a href="#">Lexify </a></h1>
+      <nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>About</li>
+						<li>Team</li>
+						<li>Contact Us</li>
+						<li><a href="index.html"> Log Out </a></li>
+					</ul>
+			</nav>
+    </header>
+    <div class="container">
+      <div id="definition">
+        <strong>lexify (v.)</strong>
+        c. 2016, "outsource, simplify, or otherwise streamline the act of writing or the creation of a document".
+        From Middle French <b>lexicon</b> or perhaps directly from Modern Latin <b>lexicon</b>, in turn
+        from Greek <b>lexikos</b> "pertaining to words,"
+        from <b>lexis</b> "a word, a phrase; reason; way of speech, diction, style".
+      </div>
+      <!--main>
+          Welcome to Lexify, the web application that lets you
+          populate templates to create professional-looking documents in minutes! Lexify your
+      </main-->
+      <br>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <label id="certificate"><a href="generateCert.html"><h2>Certificate</h2><i class="fa fa-graduation-cap" style="font-size:90px"></i></a></label>
+          </div>
+          <div class="item">
+            <label id="contract"><a href="generateContract.html"><h2>Contract</h2><i class="fa fa-file-text" style="font-size:80px"></i></a></label>
+          </div>
+          <div class="item">
+            <label id="contract2"><a href="generateInvoice.html"><h2>Invoice</h2><i class="fa fa-credit-card" style="font-size:80px"></i></a></label>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script> <!-- linking to jQuery file -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

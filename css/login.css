@@ -1,0 +1,123 @@
+body {
+  background-image:url("../images/cover_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* CSS for the main header on the login page */
+header {
+  width: 100%;
+  background-color: black;
+  height: 120px;
+}
+
+header h1 {
+  font-size: 60px;
+  line-height: 1.6;
+  height: 80px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 130px;
+  width: 400px;
+}
+
+header h3 {
+  color: white;
+  font-size: 20px;
+  line-height: 1.4;
+  height: 30px;
+  width: 400px;
+  margin-left: 132px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+header i.fa-file-text {
+  float: left;
+  margin-top: 23px;
+  margin-left: 30px;
+  color: white;
+}
+
+header i.fa-pencil {
+  float: left;
+  margin-top: 65px;
+  margin-left: -36px;
+  color: black;
+  background-color: white;
+}
+
+/*CSS for the login form */
+form.login {
+  float: right;
+  margin-right: 100px;
+  margin-top: 20px;
+	width: 250px;
+  border-radius: 4px;
+  padding-bottom:20px;
+  background: rgba(255, 255, 255, 0.6);
+  transition: 0.3s ease-in;
+}
+
+form.login:hover {
+  background: rgba(255, 255, 255, 0.8)
+}
+
+form button.submit {
+  color: green;
+  font-size: 30px;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  position:absolute;
+  margin-top: -6px;
+  margin-left: 100px;
+  transition: 0.5s ease-in;
+}
+
+form button.submit:hover {
+  cursor: pointer;
+}
+
+form button.submit:active {
+   background:green;
+   color: white;
+   outline: 0;
+   transition: 0.1s ease-out;
+}
+
+form legend {
+  padding: 15px 15px 0px 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: lighter;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form input {
+  position: relative;
+  margin: 15px auto;
+  padding: 10px 5px 10px 40px;
+  display: block;
+  border: 0.5px solid gray;
+  border-radius: 2px;
+  transition: 0.3s ease-out;
+
+}
+
+input#username {
+  background: url("../images/person.png") no-repeat;
+  background-size: 10%;
+  background-position: 5px;
+  background-color: white;
+}
+
+input#passwd {
+  background: url("../images/lock.png") no-repeat;
+  background-size: 10%;
+  background-position: 5px;
+  background-color: white;
+}
