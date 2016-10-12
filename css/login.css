@@ -109,7 +109,7 @@ form input {
 }
 
 input#username {
-  background: url("../images/person.png") no-repeat;
+  background: url("../images/person.PNG") no-repeat;
   background-size: 10%;
   background-position: 5px;
   background-color: white;
