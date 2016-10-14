@@ -22,4 +22,5 @@ $('input.subject').change(function() {
 //the print button
 $('button').click(function(){
      	window.print();
+			return false;
 });

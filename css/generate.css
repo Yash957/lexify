@@ -82,8 +82,8 @@ div#document {
 div#document div#doctitle {
   font-size: 30px;
   font-weight: bold;
-  margin-top: 28px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  line-height: 1.3em;
 }
 
 div#document div#underline {
@@ -175,12 +175,12 @@ div#document div#subject {
 This could be done using the display/print ratio.
 But don't think CSS suppports math. So manually for now */
   div#document {
-    height: 920px;
+    height: 930px;
     width: 700px;
     margin-left: 35px;
     margin-right: 20px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   div#document div#doctitle {
@@ -204,10 +204,10 @@ But don't think CSS suppports math. So manually for now */
 
   div#document div#signoff {
     margin-top: 110px;
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
     width: 350px;
-    margin-left:370px;
+    margin-left:380px;
   }
 
   div#document div#awardee {
