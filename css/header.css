@@ -61,6 +61,7 @@ header > .fa-pencil {
   background-color: white;
 }
 
+/*Just adding the background for the body */
 body {
   background-image:url("../images/cover_img_bw.jpg");
   background-size: cover;
